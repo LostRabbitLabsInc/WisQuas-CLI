@@ -161,12 +161,9 @@ enum_payloads = [
     "graphql",
     r'?\[',
     "../../../etc/passwd%00",
-    "%252e%252e%252fetc%252fpasswd%00",
     r'\..\..\..\windows\win.ini',
     "/../../../windows/win.ini",
     "?target=https://127.0.0.1",
-    "index.php?page=../../../etc/passwd%00",
-    "%0d%0aSet-Cookie%3A%20username%3D%3Cscript%3E",
     '0'*20000
 ]
 verbs = [
@@ -671,7 +668,7 @@ def wq_messages(reqobj, verb="", newhost="", enum="", proto=""):
         if enum == "<script>alert(1)</script>":
             enum = "<script>"
         
-        if len(enum) > 24:
+        if len(enum) > 32:
             label = (enum + ":").ljust(64)
         else:
             label = (enum + ":").ljust(32)
