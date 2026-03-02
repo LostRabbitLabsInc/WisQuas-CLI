@@ -52,6 +52,8 @@ The following python dependencies are required to run <strong>WisQuas-CLI</stron
 pip install aiohttp bs4 requests tldextract colorama lxml
 ```
 
+This script requires Python 3.10 or later. We recommend running it inside a Python virtual environment.
+
 ---
 
 ## Example Commands and Usage
