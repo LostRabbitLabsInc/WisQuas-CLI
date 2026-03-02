@@ -1016,7 +1016,7 @@ def wisquas_cli_main():
     print()
     print_stats_3(title_stats, "TITLES", "title") # Titles
     print()
-    print_stats_3(address_stats, "ADDRESSES", "address") # Addresses
+    print_stats_3(address_stats, "ADDRESS HTML TAGS", "address") # Addresses
     print()
     print_stats_3(locations_stats, "LOCATIONS", "redirect_location") # Locations
     print()
