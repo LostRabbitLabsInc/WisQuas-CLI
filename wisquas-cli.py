@@ -13,7 +13,6 @@ import shutil
 import socket
 import sys
 import ssl
-import sqlite3
 import time
 import tldextract
 import urllib.parse
