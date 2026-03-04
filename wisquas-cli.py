@@ -1,19 +1,15 @@
 #!/usr/bin/python3
 import aiohttp
-import argparse
 import asyncio
-import binascii
 import bs4
 import ipaddress
 import json
-import os
 import re
 import requests
 import shutil
 import socket
 import sys
 import ssl
-import time
 import tldextract
 import urllib.parse
 import urllib3
@@ -21,12 +17,9 @@ import warnings
 
 from bs4 import BeautifulSoup
 from bs4 import MarkupResemblesLocatorWarning
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 from http.client import HTTPConnection
-from pprint import pprint
-from typing import Dict, Optional, Tuple
-from urllib.parse import urlparse
-from urllib.parse import quote
+from urllib.parse import urljoin, urlparse
 from yarl import URL
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
